@@ -2,12 +2,13 @@ from abc import ABC, abstractmethod
 from enum import Enum, auto
 from typing import Callable, Optional
 
+import os
 import pygame.event
 import pygame_gui
 
 from config import (PLAYING_FIELD_WIDTH, PLAYING_FIELD_HEIGHT, PLAYING_UI_HEIGHT, MOVE, SCORE_BASE,
                     SCORE_EFFICIENCY_FACTOR, PICKUP_GROWTH_FACTOR, ColorTheme, ColorConfig, EASY_SPEED, MEDIUM_SPEED,
-                    HARD_SPEED, EXTREME_SPEED, resource_path)
+                    HARD_SPEED, EXTREME_SPEED, SOUND_PATH)
 from highscore_manager import HighscoreManager
 from snake import Direction, Food, Snake
 from user_interface import UserInterface, MainMenuUI, PlayingUI, UIEvents, SubUIs, PauseUI, GameOverUI
@@ -124,8 +125,8 @@ class Playing(GameState):
         self.pickup_count = 0
         self.score: int = 0
 
-        self.eat_sound = pygame.mixer.Sound(resource_path('res/sounds/eat_apple.wav'))
-        self.die_sound = pygame.mixer.Sound(resource_path('res/sounds/game_over.wav'))
+        self.eat_sound = pygame.mixer.Sound(os.path.join(SOUND_PATH, 'eat_apple.wav'))
+        self.die_sound = pygame.mixer.Sound(os.path.join(SOUND_PATH, 'game_over.wav'))
 
         self.snake: Snake = Snake()
         self.food: Food = Food()

@@ -12,4 +12,4 @@ Probably would need big refactor to make it look nice... I'll call it done.
 
 # Start the game
 
-todo
+Clone the repo and use PYTHONPATH=. uv run src/main.py.

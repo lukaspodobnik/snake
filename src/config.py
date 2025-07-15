@@ -15,6 +15,11 @@ PLAYING_FIELD_WIDTH, PLAYING_FIELD_HEIGHT = GRID_DIMENSION[0] * TILE_SIZE, GRID_
 PLAYING_UI_WIDTH, PLAYING_UI_HEIGHT = GRID_DIMENSION[0] * TILE_SIZE, 3 * TILE_SIZE
 WIDTH, HEIGHT = GRID_DIMENSION[0] * TILE_SIZE, GRID_DIMENSION[1] * TILE_SIZE + PLAYING_UI_HEIGHT
 
+# Paths
+RES_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "res"))
+SOUND_PATH = os.path.join(RES_PATH, 'sounds')
+GUI_PATH = os.path.join(RES_PATH, 'gui_themes')
+
 # User events
 MOVE = pygame.USEREVENT + 1
 
@@ -74,9 +79,3 @@ class ColorConfig:
                 self.snake_head = (200, 200, 200)
                 self.snake_tail = (120, 120, 120)
                 self.food = (255, 255, 255)
-
-
-def resource_path(relative_path):
-    if getattr(sys, 'frozen', False):
-        return os.path.join(sys._MEIPASS, relative_path)
-    return os.path.join(os.path.abspath("."), relative_path)

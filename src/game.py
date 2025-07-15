@@ -1,9 +1,10 @@
 from typing import Optional
 
+import os
 import pygame
 import pygame_gui
 
-from config import TITLE, WIDTH, HEIGHT, FPS, resource_path
+from config import TITLE, WIDTH, HEIGHT, FPS, GUI_PATH
 from game_states import GameState, GameStates, MainMenu, Playing, Pause, GameOver
 from highscore_manager import HighscoreManager
 
@@ -18,10 +19,10 @@ class Game:
 
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         self.ui_manager = pygame_gui.UIManager((WIDTH, HEIGHT))
-        self.ui_manager.get_theme().load_theme(resource_path('res/gui_themes/button.json'))
-        self.ui_manager.get_theme().load_theme(resource_path('res/gui_themes/label.json'))
-        self.ui_manager.get_theme().load_theme(resource_path('res/gui_themes/panel.json'))
-        self.ui_manager.get_theme().load_theme(resource_path('res/gui_themes/text_box.json'))
+        self.ui_manager.get_theme().load_theme(os.path.join(GUI_PATH, 'button.json'))
+        self.ui_manager.get_theme().load_theme(os.path.join(GUI_PATH, 'label.json'))
+        self.ui_manager.get_theme().load_theme(os.path.join(GUI_PATH, 'panel.json'))
+        self.ui_manager.get_theme().load_theme(os.path.join(GUI_PATH, 'text_box.json'))
         self.clock = pygame.time.Clock()
 
         self.states = {
