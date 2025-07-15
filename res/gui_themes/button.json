@@ -1,0 +1,53 @@
+{
+  "button":
+  {
+    "colours": {
+      "normal_bg": "#1e1e1e",
+      "hovered_bg": "#2a2a2a",
+      "active_bg": "#ff4500",
+      "selected_bg": "#3a3a3a",
+      "disabled_bg": "#555555",
+      "normal_text": "#adff2f",
+      "hovered_text": "#ffffff",
+      "active_text": "#ffffff",
+      "selected_text": "#adff2f",
+      "disabled_text": "#aaaaaa",
+      "normal_border": "#228b22",
+      "hovered_border": "#32cd32",
+      "active_border": "#ff6347",
+      "selected_border": "#32cd32",
+      "disabled_border": "#444444",
+      "normal_text_shadow": "#000000",
+      "hovered_text_shadow": "#000000",
+      "active_text_shadow": "#000000",
+      "selected_text_shadow": "#000000",
+      "disabled_text_shadow": "#222222"
+    },
+
+    "font":
+    {
+      "name": "medodica",
+      "size": "30",
+      "regular_resource": {
+        "package": "res.fonts",
+        "resource": "MedodicaRegular.otf"
+      }
+    },
+
+    "misc": {
+      "shape": "rounded_rectangle",
+      "shape_corner_radius": "4",
+      "border_width": "2",
+      "shadow_width": "3"
+    }
+  },
+
+  "#hs_back":
+  {
+    "font":
+    {
+      "name": "medodica",
+      "size": "20"
+    }
+  }
+}

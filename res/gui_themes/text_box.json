@@ -1,0 +1,29 @@
+{
+  "text_entry_line":
+  {
+    "colors":
+    {
+      "dark_bg": "#1e1e1e",
+      "selected_bg": "#2a2a2a",
+      "normal_text": "#adff2f",
+      "selected_text": "#ffffff",
+      "normal_border": "#228b22",
+      "text_cursor": "#adff2f"
+    },
+
+    "font":
+    {
+      "name": "medodica",
+      "size": "25"
+    },
+
+    "misc":
+    {
+      "shape": "rounded_rectangle",
+      "shape_corner_radius": "5",
+      "border_width": "2",
+      "shadow_width": "1",
+      "padding": "6,4"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "panel":
+  {
+    "colours": {
+      "dark_bg": "#2a2a2a",
+      "normal_border": "#228b22"
+    },
+
+    "misc": {
+      "shape": "rounded_rectangle",
+      "shape_corner_radius": "8",
+      "border_width": "2",
+      "shadow_width": "4"
+    }
+  },
+
+  "#score_panel":
+  {
+    "colours": {
+      "dark_bg": "rgb(20, 20, 20)",
+      "normal_border": "#228b22"
+    },
+
+    "misc": {
+      "shape": "rounded_rectangle",
+      "shape_corner_radius": "2",
+      "border_width": "1",
+      "shadow_width": "2"
+    }
+  }
+}

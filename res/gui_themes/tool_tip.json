@@ -1,0 +1,19 @@
+{
+  "tool_tip":
+  {
+    "tool_tip.text_box":
+    {
+      "colours":
+      {
+        "dark_bg": "#1e1e1e",
+        "normal_border": "#ADFF2F"
+      },
+
+      "misc":
+      {
+        "border_width": "2",
+        "padding": "6,6"
+      }
+    }
+  }
+}
